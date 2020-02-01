@@ -1,0 +1,7 @@
+# Create an alpine linux - based mosquitto container:
+FROM alpine
+
+RUN apk update && apk add mosquitto-clients
+
+# Create an alpine linux - based message forwarder container:
+#docker run --name forwarder --network hw03 -ti alpine_forward sh
