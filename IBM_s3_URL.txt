@@ -1,0 +1,7 @@
+Access Key ID:
+E9yK2BYU9PPdCyMQJk5G
+Secret Access Key:
+yq1ytDNx7ykQMdNh1vX0AnoKrZMZECGrAHmdsCh7
+
+URL
+https://s3.sjc.us.cloud-object-storage.appdomain.cloud
