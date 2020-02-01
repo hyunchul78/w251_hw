@@ -1,0 +1,29 @@
+FROM ubuntu:trusty
+MAINTAINER eterna2 <eterna2@hotmail.com>
+
+RUN apt-get update && apt-get install -y \
+  automake \
+  autotools-dev \
+  g++ \
+  git \
+  libcurl4-gnutls-dev \
+  libfuse-dev \
+  libssl-dev \
+  libxml2-dev \
+  make \
+  pkg-config \
+  supervisor
+
+
+RUN apt-get install -y iputils-ping
+
+# Install mosquitto framework
+RUN apt install -y mosquitto-clients
+RUN apt install -y mosquitto
+
+
+# This is the command to run this container
+# docker run --privileged --device /dev/fuse --name hw03_image_processor_v2 --network hw03 -ti image_processor_v2 sh
+
+
+WORKDIR /home/

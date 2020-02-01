@@ -1,0 +1,7 @@
+# Create an alpine linux - based mosquitto container:
+FROM alpine
+
+RUN apk update && apk add mosquitto
+
+# run with this command
+#docker run --name mosquitto --network hw03 -p 1883:1883 -ti alpine_broker sh
