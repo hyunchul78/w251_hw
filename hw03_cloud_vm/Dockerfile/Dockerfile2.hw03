@@ -21,6 +21,9 @@ RUN apt-get install -y iputils-ping
 RUN apt install -y mosquitto-clients
 RUN apt install -y mosquitto
 
+# Install paho-mqtt 
+RUN apt install -y python-pip
+RUN pip install paho-mqtt
 
 # This is the command to run this container
 # docker run --privileged --device /dev/fuse --name hw03_image_processor_v2 --network hw03 -ti image_processor_v2 sh
