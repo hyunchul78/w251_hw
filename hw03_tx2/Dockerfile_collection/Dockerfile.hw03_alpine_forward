@@ -3,5 +3,9 @@ FROM alpine
 
 RUN apk update && apk add mosquitto-clients
 
+# Install paho-mqtt
+RUN apt install -y python-pip
+RUN pip install paho-mqtt
+
 # Create an alpine linux - based message forwarder container:
 #docker run --name forwarder --network hw03 -ti alpine_forward sh
